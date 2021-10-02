@@ -48,7 +48,7 @@ export default function ManageDataCovid19(props) {
         <td> {new Intl.NumberFormat().format(country.TotalDeaths)} </td>
         <td className="text-success"> {new Intl.NumberFormat().format(country.TotalRecovered)} </td>
         <td>
-          <button className="click-country btn btn-success mr-2" onClick={() => { handleClickView(country.Country) }}>View</button>
+          <button className="click-country btn btn-success mr-2" onClick={() => { handleClickView(country.CountryCode) }}>View</button>
           <button className="click-country btn btn-success" onClick={() => { handleEvent(country) }}>{event}</button>
         </td>
       </tr>

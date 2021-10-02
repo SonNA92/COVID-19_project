@@ -1,0 +1,105 @@
+/* setup CSS */
+.covid-global, .follow-country{
+    margin: 50px 0;
+    text-align: center;
+}
+.covid-global .covid-img{
+    height: 50px;
+    width: 50px;
+}
+.table .row-title{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+}
+.table .icon-sort{
+    margin-left: 5px;
+    
+}
+.table .colum-sort:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.covid-detail{
+    position: relative;
+    height: 680px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 3px solid dodgerblue ;
+    
+}
+.covid-detail::-webkit-scrollbar{
+    width: 5px;
+
+}
+.covid-detail::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+.covid-detail::-webkit-scrollbar-track{
+    background-color: rgb(211, 195, 195);
+}
+.covid-detail .head-table{
+    position: sticky;
+    top: 0;
+}
+.table td, .table th, .table thead th{
+    vertical-align: middle;
+}
+
+.click-country:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.covid-detail-follow{
+    position: relative;
+    height: 370px;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 3px solid dodgerblue ;
+    
+}
+.covid-detail-follow::-webkit-scrollbar{
+    width: 5px;
+
+}
+.covid-detail-follow::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+.covid-detail-follow::-webkit-scrollbar-track{
+    background-color: rgb(211, 195, 195);
+}
+.covid-detail-follow .head-table{
+    position: sticky;
+    top: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px ) {
+    .covid-global h6, .covid-global h5{
+        font-size: 16px;
+    }
+}
+@media (max-width: 767px ) {
+    .covid-global h6, .covid-global h5{
+        font-size: 14px;
+    }
+}
+@media (max-width: 575px ) {
+    .navbar-dark .navbar-toggler{
+        background-color: orange;
+        height: 30px;
+        border-radius: 50%;
+    }
+    .covid-global h6, .covid-global h5{
+        font-size: 12px;
+    }
+    .container{
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+}
+@media (min-width:576px) and (max-width:767px) {
+    .container{
+        max-width: 650px;
+    }
+}

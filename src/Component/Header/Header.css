@@ -1,0 +1,14 @@
+
+.navbar-brand{
+    width: 100px;
+    height: 60px;
+    border-radius:50%;
+}
+.nav-link{
+    font-size: 16px;
+}
+.nav-link:hover{
+    color: orange !important;
+    font-size: 20px;
+    font-weight: 700;
+}

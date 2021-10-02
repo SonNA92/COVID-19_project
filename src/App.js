@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Router, Switch } from 'react-router-dom'
+// Thu vien giup chuyen huong trang
+import {createBrowserHistory} from 'history'
+import HomeTemplate from './Templates/HomeTemplates/HomeTemplate';
+import ManageDataCovid19 from './pages/Home/ManageData';
+import Loading from './Component/Loading/Loading';
+
+export const history = createBrowserHistory();
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router history ={history}>
+      <Loading/>
+      <Switch>
+        <HomeTemplate exact path="/" component={ManageDataCovid19}/>
+        
+      </Switch>
+    </Router>
+
   );
 }
 

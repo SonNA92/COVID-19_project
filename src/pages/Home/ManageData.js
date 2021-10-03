@@ -42,7 +42,7 @@ export default function ManageDataCovid19(props) {
     return array?.map((country, index) => {
       return <tr className="text-center" key={index}>
         <td> {index + 1} </td>
-        <td title="Click View Detail" className="click-country" onClick={() => { handleClickView(country.Country) }}> {country.Country} </td>
+        <td title="Click View Detail" className="click-country" onClick={() => { handleClickView(country.CountryCode) }}> {country.Country} </td>
         <td className="text-danger"> + {new Intl.NumberFormat().format(country.NewConfirmed)} </td>
         <td> {new Intl.NumberFormat().format(country.TotalConfirmed)} </td>
         <td> {new Intl.NumberFormat().format(country.TotalDeaths)} </td>
